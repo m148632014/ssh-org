@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entitys package="org.mfm.sys.org.model">
+
+
+	
 	<initEntity exist="0" class="OrgType" method="orgTypeService.add">
 		<entity name="学校" sn="XX" />
 		<entity name="分校" sn="FX" />
@@ -8,19 +11,6 @@
 		<entity name="教学部门" sn="JXBM" />
 		<entity name="专业" sn="ZY" />
 		<entity name="班级" sn="BJ" />
-	</initEntity>
-
-	<initEntity package="org.mfm.sys.init.dto" exist="0"
-		class="InitOrgTypeRuleDto" method="orgTypeService.addOrgTypeRule">
-		<entity psn="XX" csn="FX" num="90" />
-		<entity psn="XX" csn="XLDB" num="90" />
-		<entity psn="XX" csn="XZBM" num="90" />
-		<entity psn="XX" csn="JXBM" num="90" />
-		<entity psn="FX" csn="JXBM" num="90" />
-		<entity psn="FX" csn="XZBM" num="90" />
-		<entity psn="JXBM" csn="ZY" num="90" />
-		<entity psn="JXBM" csn="BJ" num="90" />
-		<entity psn="ZY" csn="BJ" num="90" />
 	</initEntity>
 
 
@@ -57,6 +47,21 @@
 		<entity personId="9" orgId="10" posId="7" />
 	</initEntity> 
 	
+	<!-- 
+	
+		<initEntity package="org.mfm.sys.init.dto" exist="0"
+		class="InitOrgTypeRuleDto" method="orgTypeService.addOrgTypeRule">
+		<entity psn="XX" csn="FX" num="90" />
+		<entity psn="XX" csn="XLDB" num="90" />
+		<entity psn="XX" csn="XZBM" num="90" />
+		<entity psn="XX" csn="JXBM" num="90" />
+		<entity psn="FX" csn="JXBM" num="90" />
+		<entity psn="FX" csn="XZBM" num="90" />
+		<entity psn="JXBM" csn="ZY" num="90" />
+		<entity psn="JXBM" csn="BJ" num="90" />
+		<entity psn="ZY" csn="BJ" num="90" />
+	</initEntity>
+	
 	<initEntity exist="0" class="Org" method="orgService.add">
 		<entity name="昭通学院" typeId="1" typeName="学校" managerType="0">
 			<entity name="学生处" typeId="4" typeName="行政部门" managerType="1" />
@@ -71,5 +76,5 @@
 				</entity>
 			</entity>
 		</entity>
-	</initEntity>
+	</initEntity> -->
 </entitys>
